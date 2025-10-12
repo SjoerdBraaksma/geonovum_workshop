@@ -41,6 +41,7 @@ echo "⭐ Installing conda and pip dependencies"
 echo
 conda install pip nb_conda_kernels -y
 conda install laspy
+conda install open3d
 conda install shapely
 conda install hdbscan
 conda install typing
