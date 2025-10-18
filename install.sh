@@ -45,4 +45,5 @@ conda install open3d
 conda install shapely
 conda install hdbscan
 conda install typing
+conda install geopandas
 conda install -c conda-forge jupyterlab
