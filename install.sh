@@ -40,9 +40,9 @@ echo
 echo "⭐ Installing conda and pip dependencies"
 echo
 conda install pip nb_conda_kernels -y
-conda install laspy
-conda install open3d
-conda install shapely
-conda install typing
-conda install geopandas
-conda install -c conda-forge jupyterlab
+conda install laspy -y
+conda install open3d -y
+conda install shapely -y
+conda install typing -y
+conda install geopandas -y
+conda install -c conda-forge jupyterlab -y
