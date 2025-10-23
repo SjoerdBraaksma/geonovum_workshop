@@ -7,6 +7,7 @@ Voor deze workshop adviseren we dat je een aantal applicaties/talen hebt geinsta
 1) Een code IDE (vscode bijvoorbeeld)
 2) git, anders kan je deze repo niet gebruiken
 3) python
+4) UV package manager (installeer via pipx install uv)
 4) Een 3D viewer voor pointclouds, zoals [cloudcompare](https://www.cloudcompare.org/)
 
 Daarnaast heb je -vooral met python- meer kans dat de isntallatie in 1x goed gaat binnen Ubuntu.
@@ -23,8 +24,8 @@ git clone https://github.com/SjoerdBraaksma/geonovum_workshop.git
 cd Geonovum
 
 # installeer de venv
-sh install.sh
+conda env create -f conda_env.yml
 
-#Indien de venv niet geactiveerd is, activeer deze met:
-conda activate geonovum_pointcloud
+# activeer de venv
+conda activate geonocum_pointcloud
 ```
