@@ -3,6 +3,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - python=3.12
   - _libgcc_mutex=0.1=conda_forge
   - _openmp_mutex=4.5=2_gnu
   - _python_abi3_support=1.0=hd8ed1ab_2
@@ -256,7 +257,7 @@ dependencies:
   - pyparsing=3.2.5=pyhcf101f3_0
   - pyproj=3.7.2=py312h9b6a7d9_2
   - pysocks=1.7.1=pyha55dd90_7
-  - python=3.12.12=hfe2f287_0_cpython
+  - python=3.11
   - python-dateutil=2.9.0.post0=pyhe01879c_2
   - python-fastjsonschema=2.21.2=pyhe01879c_0
   - python-gil=3.12.12=hd8ed1ab_1

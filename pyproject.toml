@@ -1,0 +1,43 @@
+[project]
+name = "geonovum"
+version = "0.1.0"
+description = "geonovum workshop"
+authors = [
+    {name = "Sjoerd",email = "s.braaksma@mimirconsultancy.org"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "laspy (>=2.6.1,<3.0.0)",
+    "shapely (>=2.1.2,<3.0.0)",
+    "matplotlib (>=3.10.7,<4.0.0)",
+    "geopandas (>=1.1.1,<2.0.0)",
+    "pyyaml (>=6.0.3,<7.0.0)",
+    "ipykernel (>=7.0.1,<8.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+extend-select = ["I"]  # import sorting
+ignore = ["E501"]  # ignore line length (optional since set above)
+exclude = ["data/", "output/", "__pycache__/", ".venv/"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+
+[tool.ruff.lint]
+preview = false
+
+[dependency-groups]
+dev = [
+    "ruff (>=0.14.2,<0.15.0)"
+]
